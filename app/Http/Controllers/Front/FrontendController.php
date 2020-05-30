@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 use App\Model\About;
 use App\Model\Banner;
+use App\Model\Dream;
 use App\Model\Story;
 use Illuminate\Http\Request;
 
@@ -14,8 +15,9 @@ class FrontendController extends Controller
         $banner = Banner::where('status',1)->first();
         $about = About::where('status',1)->first();
         $story = Story::where('status',1)->first();
+        $dream = Dream::where('status',1)->first();
 
-        return view('frontend.pages.index',compact('banner','about','story'));
+        return view('frontend.pages.index',compact('banner','about','story','dream'));
     }
 
 
@@ -32,7 +34,8 @@ class FrontendController extends Controller
 
 
     public function dream(){
-        return view('frontend.pages.dream');
+        $dream = Dream::where('status',1)->first();
+        return view('frontend.pages.dream',compact('dream'));
     }
 
     public function goals(){

@@ -277,21 +277,16 @@
         <div class="col-md-12">
           <div class="title-wrap d-flex justify-content-between">
             <div class="title-box">
-              <h2 class="title-a" style="margin-bottom: -20px">Our Dream</h2>
+              <h2 class="title-a" style="margin-bottom: -20px">{{ $dream->homepage_title }}</h2>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
               <div class="text-justify">
-                <p style="margin-top:-20px; margin-bottom:-20px;">Following an exhausting twenty four (24) hours of passionate, thoughtful speeches
-                concerning the relationship with their Far Eastern-Mother Country, men of
-                goodwill meeting in Philadelphia 1776 narrowed their objections and agreements
-                down to five (5) basic concerns which became the foundation on which the
-                Governing Document for the New Nation, the United States of America, would
-                be developed. Those objectives were recorded and published as the Preamble to
-                the Constitution.
+                <p style="margin-top:-20px; margin-bottom:-20px;">
+                    {!! substr($dream->dream_content,0,500).' ' !!}
 
-              <a href="{{ route('dream.page') }}">Read More...</a> </p>
+                    <a href="{{ route('dream.page') }}"><b>Learn More...</b></a> </p>
 
               </div>
             </div>

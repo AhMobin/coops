@@ -35,6 +35,8 @@
 
                     <li><a href="{{ url('story') }}"><i class="fa fa-history"></i> Story Page</a></li>
 
+                    <li><a href="{{ url('dream') }}"><i class="fa fa-tasks"></i> Dream Page</a></li>
+
                 </ul>
             </div>
             <div class="menu_section">
