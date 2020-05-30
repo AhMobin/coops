@@ -27,7 +27,6 @@
     <!-- Main Stylesheet File -->
     <link href="{{ asset('public/frontend/css/style.css') }}" rel="stylesheet">
 
-
     <style media="screen">
         .title-c{
             font-size: 1.5rem;

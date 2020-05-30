@@ -49,7 +49,24 @@
 <!-- bootstrap-daterangepicker -->
 <script src="{{ asset('public/backend/vendors/moment/min/moment.min.js') }}"></script>
 <script src="{{ asset('public/backend/vendors/bootstrap-daterangepicker/daterangepicker.js') }}"></script>
-
+<!-- bootstrap-wysiwyg -->
+<script src="{{ asset('public/backend/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js') }}"></script>
+<script src="{{ asset('public/backend/vendors/jquery.hotkeys/jquery.hotkeys.js') }}"></script>
+<script src="{{ asset('public/backend/vendors/google-code-prettify/src/prettify.js') }}"></script>
+<!-- jQuery Tags Input -->
+<script src="{{ asset('public/backend/vendors/jquery.tagsinput/src/jquery.tagsinput.js') }}"></script>
+<!-- Switchery -->
+<script src="{{ asset('public/backend/vendors/switchery/dist/switchery.min.js') }}"></script>
+<!-- Select2 -->
+<script src="{{ asset('public/backend/vendors/select2/dist/js/select2.full.min.js') }}"></script>
+<!-- Parsley -->
+<script src="{{ asset('public/backend/vendors/parsleyjs/dist/parsley.min.js') }}"></script>
+<!-- Autosize -->
+<script src="{{ asset('public/backend/vendors/autosize/dist/autosize.min.js') }}"></script>
+<!-- jQuery autocomplete -->
+<script src="{{ asset('public/backend/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js') }}"></script>
+<!-- starrr -->
+<script src="{{ asset('public/backend/vendors/starrr/dist/starrr.js') }}"></script>
 <!-- Custom Theme Scripts -->
 <script src="{{ asset('public/backend/build/js/custom.min.js') }}"></script>
 

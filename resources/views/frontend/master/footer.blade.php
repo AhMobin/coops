@@ -128,5 +128,8 @@
 <!-- Template Main Javascript File -->
 <script src="{{ asset('public/frontend/js/main.js') }}"></script>
 
+
+
+
 </body>
 </html>

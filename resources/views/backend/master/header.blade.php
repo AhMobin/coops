@@ -25,6 +25,14 @@
     <link href="{{ asset('public/backend/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet">
     <!-- JQVMap -->
     <link href="{{ asset('public/backend/vendors/jqvmap/dist/jqvmap.min.css') }}" rel="stylesheet"/>
+    <!-- bootstrap-wysiwyg -->
+    <link href="{{ asset('public/backend/vendors/google-code-prettify/bin/prettify.min.css') }}" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="{{ asset('public/backend/vendors/select2/dist/css/select2.min.css') }}" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="{{ asset('public/backend/vendors/switchery/dist/switchery.min.css') }}" rel="stylesheet">
+    <!-- starrr -->
+    <link href="{{ asset('public/backend/vendors/starrr/dist/starrr.css') }}" rel="stylesheet">
     <!-- bootstrap-daterangepicker -->
     <link href="{{ asset('public/backend/vendors/bootstrap-daterangepicker/daterangepicker.css') }}" rel="stylesheet">
 

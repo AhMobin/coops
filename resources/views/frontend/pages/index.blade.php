@@ -10,17 +10,17 @@
         <div class="col-md-12">
           <div class="title-wrap d-flex justify-content-between">
             <div class="title-box">
-              <h2 class="title-a" style="margin-bottom: -20px">Who We Are</h2>
+              <h2 class="title-a" style="margin-bottom: -20px">{{ $about->homepage_title }}</h2>
             </div>
           </div>
           <div class="row">
             <div class="col-md-8">
               <div class="text-justify">
-                <p>James N. Dancy, President and CEO of the 501(c)(3) non-profit Center for Cooperative Housing (CCH) is a nationally recognized Developer and Manager of cooperative housing communities serving families of modest income. In 1961 the Foundation for Cooperative Housing and FCH Services Inc. engaged the service of Mr. Dancy to help organize the first Investor Sponsored, 221(d)(3) cooperative in the country to take title to its property. To gain first-hand knowledge of the cooperative experience, Jim moved his family into the new, 512 units Parade Park Homes project {shown here and below} constructed on Urban Renewal Land, just below 12th & Vine (which was memorialized by R&B Celebrity, Thurston Harrison in his popular recording “Going to Kansas City.”) <a href="{{ route('about.page') }}">Read More...</a> </p>
+                  <p>{!! substr($about->about_content,0,730) !!} <a href="{{ route('about.page') }}"><b>Learn More...</b></a> </p>
               </div>
             </div>
             <div class="col-md-4">
-              <img src="{{ asset('public/frontend/img/who.png') }}" alt="">
+              <img src="{{ asset('storage/app/'.$about->cover_image) }}" alt="" style="height: 200px" width="100%">
             </div>
           </div>
         </div>
@@ -161,18 +161,21 @@
         <div class="col-md-12">
           <div class="title-wrap d-flex justify-content-between">
             <div class="title-box">
-              <h2 class="title-a" style="margin-bottom: -20px">Our Story</h2>
+              <h2 class="title-a" style="margin-bottom: -20px">{{ $story->homepage_title }}</h2>
             </div>
           </div>
           <div class="row">
             <div class="col-md-8">
               <div class="text-justify">
-                <p>For more than fifty (50) years, James N. Dancy, with the capable assistance of his wife, Barbara, has been involved in the development, organization and management of housing cooperatives for families and persons of modest income primarily in the Midwest and Eastern parts of the country including several large HUD Distressed, Foreclosed and/or Secretary Held multifamily projects in Ohio, Pennsylvania, New Jersey, New York, Connecticut, Rhode Island and Mass. <a href="{{ route('story.page') }}">Read More...</a> </p>
+                  <p>{!! substr($story->story_content,0,720) !!} <a href="{{ route('story.page') }}"><b>Learn More...</b></a> </p>
               </div>
             </div>
-            <div class="col-md-4">
-              <img src="{{ asset('public/frontend/img/who.png') }}" alt="">
-            </div>
+
+              @if($story->cover_image)
+                <div class="col-md-4">
+                  <img src="{{ asset('storage/app/'.$story->cover_image) }}" alt="" style="height: 220px; width: 100%; ">
+                </div>
+              @endif
           </div>
         </div>
       </div>

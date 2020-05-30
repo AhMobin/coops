@@ -136,6 +136,8 @@ class BannerController extends Controller
     public function destroy($id)
     {
         $delete = Banner::findorfail($id);
+        $Banner = $delete->banner_image;
+        Storage::delete($Banner);
         $delete->delete();
 
         $notification = array(

@@ -3,24 +3,31 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
+use App\Model\About;
 use App\Model\Banner;
+use App\Model\Story;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
     public function index(){
         $banner = Banner::where('status',1)->first();
-        return view('frontend.pages.index',compact('banner'));
+        $about = About::where('status',1)->first();
+        $story = Story::where('status',1)->first();
+
+        return view('frontend.pages.index',compact('banner','about','story'));
     }
 
 
     public function about(){
-        return view('frontend.pages.about');
+        $about = About::where('status',1)->first();
+        return view('frontend.pages.about',compact('about'));
     }
 
 
     public function story(){
-        return view('frontend.pages.story');
+        $story = Story::where('status',1)->first();
+        return view('frontend.pages.story',compact('story'));
     }
 
 

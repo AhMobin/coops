@@ -48,7 +48,18 @@ Route::get('/home', 'HomeController@index')->name('home');
 |--------------------------------------------------------------------------
 */
 
-//Homepage Banner
+
+//homepage-banner
 Route::resource('banner','Back\BannerController');
 Route::get('banner/active/{id}','Back\BannerController@active');
 Route::get('banner/inactive/{id}','Back\BannerController@inactive');
+
+//about
+Route::resource('about','Back\AboutController');
+Route::get('about/active/{id}','Back\AboutController@active');
+Route::get('about/inactive/{id}','Back\AboutController@inactive');
+
+//story
+Route::resource('story','Back\StoryController');
+Route::get('story/active/{id}','Back\StoryController@active');
+Route::get('story/inactive/{id}','Back\StoryController@inactive');

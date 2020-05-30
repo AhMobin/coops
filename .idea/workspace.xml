@@ -2,21 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47cc6033-6abf-4064-b9ad-2a8c457ce893" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/banner/banners.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/banner/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/master/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/master/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/master/layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/master/navbar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/master/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/Story.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/about/about_content.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/about/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Back/BannerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Back/BannerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/FrontendController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/master/banner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/master/banner.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/banner/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/banner/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/master/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/master/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/master/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/master/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/master/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/master/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/master/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/master/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/master/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/master/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/story.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/story.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,8 +142,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel_app\office\coops\database\migrations" />
+      <recent name="C:\xampp\htdocs\laravel_app\office\coops\app\Model" />
+      <recent name="C:\xampp\htdocs\laravel_app\office\coops\resources\views\backend" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\laravel_app\office\coops\resources\views\backend" />
     </key>
@@ -167,6 +173,7 @@
       <workItem from="1590235217181" duration="1001000" />
       <workItem from="1590607169649" duration="13125000" />
       <workItem from="1590664436100" duration="9944000" />
+      <workItem from="1590787339490" duration="10790000" />
     </task>
     <servers />
   </component>
@@ -178,5 +185,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="452" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1590619014475" />
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1590797347319">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1590797347319" />
   </component>
 </project>
