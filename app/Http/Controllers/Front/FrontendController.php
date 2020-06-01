@@ -7,6 +7,7 @@ use App\Model\About;
 use App\Model\Banner;
 use App\Model\Dream;
 use App\Model\Story;
+use App\Model\Goal;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -39,7 +40,8 @@ class FrontendController extends Controller
     }
 
     public function goals(){
-        return view('frontend.pages.goal');
+        $goal = Goal::where('status',1)->first();
+        return view('frontend.pages.goal',compact('goal'));
     }
 
     public function jobs(){

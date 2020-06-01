@@ -37,6 +37,8 @@
 
                     <li><a href="{{ url('dream') }}"><i class="fa fa-tasks"></i> Dream Page</a></li>
 
+                    <li><a href="{{ url('goal') }}"><i class="fa fa-soccer-ball-o"></i> Goal Page</a></li>
+
                 </ul>
             </div>
             <div class="menu_section">

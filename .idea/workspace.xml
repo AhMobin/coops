@@ -5,8 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/FrontendController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/master/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/master/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/dream.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/dream.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/goal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/goal.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,13 +134,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\laravel_app\office\coops\resources\views\backend" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\laravel_app\office\coops\resources\views\backend" />
+      <recent name="C:\xampp\htdocs\laravel_app\office\coops\app\Http\Controllers\Back" />
       <recent name="C:\xampp\htdocs\laravel_app\office\coops\database\migrations" />
       <recent name="C:\xampp\htdocs\laravel_app\office\coops\app\Model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel_app\office\coops\resources\views\backend" />
     </key>
   </component>
   <component name="RunManager">
@@ -164,7 +164,9 @@
       <workItem from="1590607169649" duration="13125000" />
       <workItem from="1590664436100" duration="9944000" />
       <workItem from="1590787339490" duration="10790000" />
-      <workItem from="1590849269280" duration="1685000" />
+      <workItem from="1590849269280" duration="2022000" />
+      <workItem from="1590939399451" duration="2812000" />
+      <workItem from="1591008435976" duration="1443000" />
     </task>
     <servers />
   </component>

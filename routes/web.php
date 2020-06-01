@@ -68,3 +68,8 @@ Route::get('story/inactive/{id}','Back\StoryController@inactive');
 Route::resource('dream','Back\DreamController');
 Route::get('dream/active/{id}','Back\DreamController@active');
 Route::get('dream/inactive/{id}','Back\DreamController@inactive');
+
+//goal
+Route::resource('goal','Back\GoalController');
+Route::get('goal/active/{id}','Back\GoalController@active');
+Route::get('goal/inactive/{id}','Back\GoalController@inactive');
