@@ -3,12 +3,12 @@
 namespace App\Http\Controllers\Back;
 
 use App\Http\Controllers\Controller;
-use App\Model\Goal;
+use App\Model\JobInAmerica;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
-class GoalController extends Controller
+class AmericaJobController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +17,8 @@ class GoalController extends Controller
      */
     public function index()
     {
-        $goal = Goal::all();
-        return view('backend.goal.goal_content',compact('goal'));
+        $jobs = JobInAmerica::all();
+        return view('backend.jobs.jobs_content',compact('jobs'));
     }
 
     /**
@@ -41,33 +41,33 @@ class GoalController extends Controller
     {
         $request->validate([
             'page_heading' => 'required',
-            'goal_content' => 'required',
+            'american_job_content' => 'required',
             'cover_image' => 'mimes:jpg,jpeg,gif,png'
         ]);
 
         if($request->hasFile('cover_image')){
-            $cover = $request->file('cover_image')->store('goal/covers');
+            $cover = $request->file('cover_image')->store('jobs/covers');
 
-            Goal::create([
+            JobInAmerica::create([
                 'page_heading' => $request->page_heading,
-                'goal_content' => $request->goal_content,
+                'american_job_content' => $request->american_job_content,
                 'cover_image' => $cover,
             ]);
             $notification = array(
-                'messege' => 'Goal Page Content Inserted',
+                'messege' => 'American Job Page Content Uploaded',
                 'alert-type' => 'success'
             );
 
             return redirect()->back()->with($notification);
 
         }else{
-            Goal::create([
+            JobInAmerica::create([
                 'page_heading' => $request->page_heading,
-                'goal_content' => $request->goal_content,
+                'american_job_content' => $request->american_job_content,
             ]);
 
             $notification = array(
-                'messege' => 'Goal Page Content Inserted',
+                'messege' => 'American Job Page Content Inserted',
                 'alert-type' => 'success'
             );
 
@@ -95,8 +95,8 @@ class GoalController extends Controller
      */
     public function edit($id)
     {
-        $edit = Goal::where('id',$id)->first();
-        return view('backend.goal.edit',compact('edit'));
+        $edit = JobInAmerica::where('id',$id)->first();
+        return view('backend.jobs.edit',compact('edit'));
     }
 
     /**
@@ -111,10 +111,10 @@ class GoalController extends Controller
         if($request->hasFile('cover_image')){
             $oldCover = $request->old_image;
             Storage::delete($oldCover);
-            $newCover = $request->file('cover_image')->store('goal/covers');
-            $update = Goal::findorfail($id);
+            $newCover = $request->file('cover_image')->store('jobs/covers');
+            $update = JobInAmerica::findorfail($id);
             $update->page_heading = $request->page_heading;
-            $update->goal_content = $request->goal_content;
+            $update->american_job_content = $request->american_job_content;
             $update->cover_image = $newCover;
             $update->save();
 
@@ -126,9 +126,9 @@ class GoalController extends Controller
             return redirect()->back()->with($notification);
 
         }else{
-            $update = Goal::findorfail($id);
+            $update = JobInAmerica::findorfail($id);
             $update->page_heading = $request->page_heading;
-            $update->goal_content = $request->goal_content;
+            $update->american_job_content = $request->american_job_content;
             $update->save();
 
             $notification = array(
@@ -148,7 +148,7 @@ class GoalController extends Controller
      */
     public function destroy($id)
     {
-        $delete = Goal::findorfail($id);
+        $delete = JobInAmerica::findorfail($id);
         $image = $delete->cover_image;
         if($image){
             Storage::delete($image);
@@ -168,8 +168,8 @@ class GoalController extends Controller
 
         $data = array();
         $data['status'] = 0;
-        DB::table('goals')->update($data);
-        $active = Goal::findorfail($id);
+        DB::table('job_in_americas')->update($data);
+        $active = JobInAmerica::findorfail($id);
         $active->status = 1;
         $active->save();
 
@@ -182,7 +182,7 @@ class GoalController extends Controller
 
 
     public function inactive($id){
-        $inactive = Goal::findorfail($id);
+        $inactive = JobInAmerica::findorfail($id);
         $inactive->status = 0;
         $inactive->save();
 

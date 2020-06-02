@@ -1,7 +1,7 @@
 
 @extends('backend.master.layout')
 
-@section('title','Edit Goal Content')
+@section('title','Edit Job In America\'s Content')
 
 @section('content')
     <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
@@ -12,7 +12,7 @@
         <div class="">
             <div class="page-title">
                 <div class="title_left">
-                    <h3>Edit Goal Page Content</h3>
+                    <h3>Edit Job In America Page Content</h3>
                 </div>
             </div>
 
@@ -26,7 +26,7 @@
 
                         <div class="x_content">
 
-                            <form action="{{ url('goal/'.$edit->id) }}" method="post" enctype="multipart/form-data">
+                            <form action="{{ url('job/'.$edit->id) }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
 
@@ -37,7 +37,7 @@
 
                                 <div class="form-group">
                                     <label for="storyContent">Page Content</label>
-                                    <textarea name="goal_content" id="editor" class="form-control">{!! $edit->goal_content !!}</textarea>
+                                    <textarea name="jobs_content" id="editor" class="form-control">{!! $edit->american_job_content !!}</textarea>
                                 </div>
 
                                 @if($edit->cover_image)
@@ -56,7 +56,7 @@
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-dark">Update</button>
                                     <div style="float: right">
-                                        <a href="{{ url('goal') }}" class="btn btn-info">Back</a>
+                                        <a href="{{ url('job') }}" class="btn btn-info">Back</a>
                                     </div>
                                 </div>
                             </form>

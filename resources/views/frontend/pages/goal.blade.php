@@ -12,7 +12,6 @@
             <h1 class="title-single">{{ $goal->page_heading }}</h1>
           </div>
         </div>
-
       </div>
     </div>
   </section>

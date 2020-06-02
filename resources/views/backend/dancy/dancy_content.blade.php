@@ -1,7 +1,7 @@
 
 @extends('backend.master.layout')
 
-@section('title','Goal Content')
+@section('title','Dancy Page Content')
 
 @section('content')
     <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
@@ -42,7 +42,7 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($goal as $row)
+                                @foreach($dancy as $row)
                                     <tr>
                                         <th scope="row">{{ $row->id }}</th>
                                         <td>{{ $row->page_heading }}</td>
@@ -54,13 +54,13 @@
                                             @endif
                                         </td>
                                         <td>
-                                            <a href="{{ url('goal/'.$row->id.'/edit') }}" class="btn btn-sm btn-info"> <i class="fa fa-edit"></i> </a>
+                                            <a href="{{ url('dancy/'.$row->id.'/edit') }}" class="btn btn-sm btn-info"> <i class="fa fa-edit"></i> </a>
                                             @if(!$row->status)
-                                                <a href="{{ url('goal/active/'.$row->id) }}" title="active now" class="btn btn-sm btn-success"> <i class="fa fa-thumbs-up"></i> </a>
+                                                <a href="{{ url('dancy/active/'.$row->id) }}" title="active now" class="btn btn-sm btn-success"> <i class="fa fa-thumbs-up"></i> </a>
                                             @else
-                                                <a href="{{ url('goal/inactive/'.$row->id) }}" title="inactive now" class="btn btn-sm btn-dark"> <i class="fa fa-thumbs-down"></i> </a>
+                                                <a href="{{ url('dancy/inactive/'.$row->id) }}" title="inactive now" class="btn btn-sm btn-dark"> <i class="fa fa-thumbs-down"></i> </a>
                                             @endif
-                                            <form action="{{ url('goal/'.$row->id) }}" method="post" style="display: inline">
+                                            <form action="{{ url('dancy/'.$row->id) }}" method="post" style="display: inline">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-sm btn-danger"> <i class="fa fa-trash"></i> </button>
@@ -85,11 +85,11 @@
     <!-- Modal -->
     <div class="modal fade" id="goalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <form action="{{ url('goal') }}" method="post" enctype="multipart/form-data">
+            <form action="{{ url('dancy') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Insert About Page Content</h5>
+                        <h5 class="modal-title" id="exampleModalLongTitle">Insert Dancy Page Content</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -103,13 +103,13 @@
 
                         <div class="form-group">
                             <label for="storyContent">Content</label>
-                            <textarea name="goal_content" id="editor" class="form-control"></textarea>
+                            <textarea name="dancy_content" id="editor" class="form-control"></textarea>
                         </div>
 
                         <div class="form-group">
                             <label for="coverImage">Cover Image</label>
                             <input type="file" name="cover_image" class="form-control">
-                            <small>only jpg & jpeg image format supported</small>
+                            <small>only jpg, jpeg or png format supported</small>
                         </div>
 
                     </div>

@@ -4,11 +4,11 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Goal extends Model
+class JobInAmerica extends Model
 {
     protected $fillable = [
         'page_heading',
-        'goal_content',
+        'american_job_content',
         'cover_image',
         'status',
     ];

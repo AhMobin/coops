@@ -1,7 +1,7 @@
 
 @extends('backend.master.layout')
 
-@section('title','Goal Content')
+@section('title','Job In America Content')
 
 @section('content')
     <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
@@ -11,7 +11,7 @@
         <div class="">
             <div class="page-title">
                 <div class="title_left">
-                    <h3>Goal Page Content</h3>
+                    <h3>Job In America Page Content</h3>
                 </div>
                 <div class="title_right">
                     <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
@@ -42,7 +42,7 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($goal as $row)
+                                @foreach($jobs as $row)
                                     <tr>
                                         <th scope="row">{{ $row->id }}</th>
                                         <td>{{ $row->page_heading }}</td>
@@ -54,13 +54,13 @@
                                             @endif
                                         </td>
                                         <td>
-                                            <a href="{{ url('goal/'.$row->id.'/edit') }}" class="btn btn-sm btn-info"> <i class="fa fa-edit"></i> </a>
+                                            <a href="{{ url('job/'.$row->id.'/edit') }}" class="btn btn-sm btn-info"> <i class="fa fa-edit"></i> </a>
                                             @if(!$row->status)
-                                                <a href="{{ url('goal/active/'.$row->id) }}" title="active now" class="btn btn-sm btn-success"> <i class="fa fa-thumbs-up"></i> </a>
+                                                <a href="{{ url('job/active/'.$row->id) }}" title="active now" class="btn btn-sm btn-success"> <i class="fa fa-thumbs-up"></i> </a>
                                             @else
-                                                <a href="{{ url('goal/inactive/'.$row->id) }}" title="inactive now" class="btn btn-sm btn-dark"> <i class="fa fa-thumbs-down"></i> </a>
+                                                <a href="{{ url('job/inactive/'.$row->id) }}" title="inactive now" class="btn btn-sm btn-dark"> <i class="fa fa-thumbs-down"></i> </a>
                                             @endif
-                                            <form action="{{ url('goal/'.$row->id) }}" method="post" style="display: inline">
+                                            <form action="{{ url('job/'.$row->id) }}" method="post" style="display: inline">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-sm btn-danger"> <i class="fa fa-trash"></i> </button>
@@ -85,7 +85,7 @@
     <!-- Modal -->
     <div class="modal fade" id="goalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <form action="{{ url('goal') }}" method="post" enctype="multipart/form-data">
+            <form action="{{ url('job') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="modal-content">
                     <div class="modal-header">
@@ -103,7 +103,7 @@
 
                         <div class="form-group">
                             <label for="storyContent">Content</label>
-                            <textarea name="goal_content" id="editor" class="form-control"></textarea>
+                            <textarea name="american_job_content" id="editor" class="form-control"></textarea>
                         </div>
 
                         <div class="form-group">

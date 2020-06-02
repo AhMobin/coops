@@ -3,12 +3,12 @@
 namespace App\Http\Controllers\Back;
 
 use App\Http\Controllers\Controller;
-use App\Model\Goal;
+use App\Model\Dancy;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
-class GoalController extends Controller
+class DancyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +17,8 @@ class GoalController extends Controller
      */
     public function index()
     {
-        $goal = Goal::all();
-        return view('backend.goal.goal_content',compact('goal'));
+        $dancy = Dancy::all();
+        return view('backend.dancy.dancy_content',compact('dancy'));
     }
 
     /**
@@ -41,33 +41,33 @@ class GoalController extends Controller
     {
         $request->validate([
             'page_heading' => 'required',
-            'goal_content' => 'required',
+            'dancy_content' => 'required',
             'cover_image' => 'mimes:jpg,jpeg,gif,png'
         ]);
 
         if($request->hasFile('cover_image')){
-            $cover = $request->file('cover_image')->store('goal/covers');
+            $cover = $request->file('cover_image')->store('dancy/covers');
 
-            Goal::create([
+            Dancy::create([
                 'page_heading' => $request->page_heading,
-                'goal_content' => $request->goal_content,
+                'dancy_content' => $request->dancy_content,
                 'cover_image' => $cover,
             ]);
             $notification = array(
-                'messege' => 'Goal Page Content Inserted',
+                'messege' => 'Dancy Page Content Inserted',
                 'alert-type' => 'success'
             );
 
             return redirect()->back()->with($notification);
 
         }else{
-            Goal::create([
+            Dancy::create([
                 'page_heading' => $request->page_heading,
-                'goal_content' => $request->goal_content,
+                'dancy_content' => $request->dancy_content,
             ]);
 
             $notification = array(
-                'messege' => 'Goal Page Content Inserted',
+                'messege' => 'Dancy Page Content Inserted',
                 'alert-type' => 'success'
             );
 
@@ -95,8 +95,8 @@ class GoalController extends Controller
      */
     public function edit($id)
     {
-        $edit = Goal::where('id',$id)->first();
-        return view('backend.goal.edit',compact('edit'));
+        $edit = Dancy::where('id',$id)->first();
+        return view('backend.dancy.edit',compact('edit'));
     }
 
     /**
@@ -111,10 +111,10 @@ class GoalController extends Controller
         if($request->hasFile('cover_image')){
             $oldCover = $request->old_image;
             Storage::delete($oldCover);
-            $newCover = $request->file('cover_image')->store('goal/covers');
-            $update = Goal::findorfail($id);
+            $newCover = $request->file('cover_image')->store('dancy/covers');
+            $update = Dancy::findorfail($id);
             $update->page_heading = $request->page_heading;
-            $update->goal_content = $request->goal_content;
+            $update->dancy_content = $request->dancy_content;
             $update->cover_image = $newCover;
             $update->save();
 
@@ -126,9 +126,9 @@ class GoalController extends Controller
             return redirect()->back()->with($notification);
 
         }else{
-            $update = Goal::findorfail($id);
+            $update = Dancy::findorfail($id);
             $update->page_heading = $request->page_heading;
-            $update->goal_content = $request->goal_content;
+            $update->dancy_content = $request->dancy_content;
             $update->save();
 
             $notification = array(
@@ -148,7 +148,7 @@ class GoalController extends Controller
      */
     public function destroy($id)
     {
-        $delete = Goal::findorfail($id);
+        $delete = Dancy::findorfail($id);
         $image = $delete->cover_image;
         if($image){
             Storage::delete($image);
@@ -168,8 +168,8 @@ class GoalController extends Controller
 
         $data = array();
         $data['status'] = 0;
-        DB::table('goals')->update($data);
-        $active = Goal::findorfail($id);
+        DB::table('dancies')->update($data);
+        $active = Dancy::findorfail($id);
         $active->status = 1;
         $active->save();
 
@@ -182,7 +182,7 @@ class GoalController extends Controller
 
 
     public function inactive($id){
-        $inactive = Goal::findorfail($id);
+        $inactive = Dancy::findorfail($id);
         $inactive->status = 0;
         $inactive->save();
 

@@ -26,7 +26,7 @@
 
                         <div class="x_content">
 
-                            <form action="{{ url('goal/'.$edit->id) }}" method="post" enctype="multipart/form-data">
+                            <form action="{{ url('dancy/'.$edit->id) }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
 
@@ -37,7 +37,7 @@
 
                                 <div class="form-group">
                                     <label for="storyContent">Page Content</label>
-                                    <textarea name="goal_content" id="editor" class="form-control">{!! $edit->goal_content !!}</textarea>
+                                    <textarea name="dancy_content" id="editor" class="form-control">{!! $edit->dancy_content !!}</textarea>
                                 </div>
 
                                 @if($edit->cover_image)

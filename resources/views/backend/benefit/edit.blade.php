@@ -1,7 +1,7 @@
 
 @extends('backend.master.layout')
 
-@section('title','Edit Goal Content')
+@section('title','Edit Benefit Content')
 
 @section('content')
     <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
@@ -12,7 +12,7 @@
         <div class="">
             <div class="page-title">
                 <div class="title_left">
-                    <h3>Edit Goal Page Content</h3>
+                    <h3>Edit Benefit Content</h3>
                 </div>
             </div>
 
@@ -26,37 +26,24 @@
 
                         <div class="x_content">
 
-                            <form action="{{ url('goal/'.$edit->id) }}" method="post" enctype="multipart/form-data">
+                            <form action="{{ url('benefit/'.$edit->id) }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
 
                                 <div class="form-group">
-                                    <label for="pageHeadline">Page Headline</label>
-                                    <input type="text" name="page_heading" class="form-control" value="{{ $edit->page_heading }}">
+                                    <label for="Headline">Benefit</label>
+                                    <input type="text" name="benefit_heading" class="form-control" value="{{ $edit->benefit_heading }}">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="storyContent">Page Content</label>
-                                    <textarea name="goal_content" id="editor" class="form-control">{!! $edit->goal_content !!}</textarea>
-                                </div>
-
-                                @if($edit->cover_image)
-                                <div class="form-group">
-                                    <label for="currentCoverImage">Current Image</label><br>
-                                    <img src="{{ url('storage/app/'.$edit->cover_image) }}" style="width: 250px; height: 130px" class="img-fluid" alt="{{ $edit->homepage_title.' image' }}">
-                                    <input type="hidden" name="old_image" class="form-control" value="{{ $edit->cover_image }}">
-                                </div>
-                                @endif
-
-                                <div class="form-group">
-                                    <label for="coverImageUpdate">Update Image</label><br>
-                                    <input type="file" name="cover_image" class="form-control">
+                                    <label for="Content">Content</label>
+                                    <textarea name="benefit_content" id="editor" class="form-control">{!! $edit->benefit_content !!}</textarea>
                                 </div>
 
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-dark">Update</button>
                                     <div style="float: right">
-                                        <a href="{{ url('goal') }}" class="btn btn-info">Back</a>
+                                        <a href="{{ url('benefit') }}" class="btn btn-info">Back</a>
                                     </div>
                                 </div>
                             </form>

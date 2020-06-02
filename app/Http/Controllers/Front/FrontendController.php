@@ -5,9 +5,13 @@ namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 use App\Model\About;
 use App\Model\Banner;
+use App\Model\Benefit;
 use App\Model\Dream;
+use App\Model\JobInAmerica;
+use App\Model\Service;
 use App\Model\Story;
 use App\Model\Goal;
+use App\Model\Dancy;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -17,8 +21,11 @@ class FrontendController extends Controller
         $about = About::where('status',1)->first();
         $story = Story::where('status',1)->first();
         $dream = Dream::where('status',1)->first();
+        $dancy = Dancy::where('status',1)->first();
+        $services = Service::where('status',1)->get();
+        $benefits = Benefit::where('status',1)->get();
 
-        return view('frontend.pages.index',compact('banner','about','story','dream'));
+        return view('frontend.pages.index',compact('banner','about','story','dream','dancy','services','benefits'));
     }
 
 
@@ -45,11 +52,17 @@ class FrontendController extends Controller
     }
 
     public function jobs(){
-        return view('frontend.pages.jobs');
+        $job = JobInAmerica::where('status',1)->first();
+        return view('frontend.pages.jobs',compact('job'));
     }
 
 
     public function contact(){
         return view('frontend.pages.contact');
+    }
+
+    public function dancy(){
+        $dancy = Dancy::where('status',1)->first();
+        return view('frontend.pages.dancy',compact('dancy'));
     }
 }

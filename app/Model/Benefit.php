@@ -4,12 +4,12 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Goal extends Model
+class Benefit extends Model
 {
     protected $fillable = [
-        'page_heading',
-        'goal_content',
-        'cover_image',
+        'benefit_heading',
+        'benefit_content',
         'status',
+
     ];
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGoalsTable extends Migration
+class CreateDanciesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateGoalsTable extends Migration
      */
     public function up()
     {
-        Schema::create('goals', function (Blueprint $table) {
+        Schema::create('dancies', function (Blueprint $table) {
             $table->id();
             $table->string('page_heading',100);
-            $table->longText('goal_content');
+            $table->longText('dancy_content');
             $table->string('cover_image')->nullable();
             $table->boolean('status')->default(0);
             $table->timestamps();
@@ -30,6 +30,6 @@ class CreateGoalsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('goals');
+        Schema::dropIfExists('dancies');
     }
 }

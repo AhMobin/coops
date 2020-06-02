@@ -1,5 +1,5 @@
 @extends('frontend.master.layout')
-@section('title','jobs')
+@section('title','story')
 
 @section('content')
 
@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-12 col-lg-12">
                     <div class="title-single-box">
-                        <h1 class="title-single">{{ $job->page_heading }}</h1>
+                        <h1 class="title-single">{{ $dancy->page_heading }}</h1>
                     </div>
                 </div>
 
@@ -23,17 +23,15 @@
     <section class="section-about">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <div class="about-img-box ml-0 pl-0">
-                        @if($job->cover_image)
-                        <img src="{{ asset('storage/app/'.$job->cover_image) }}" alt="" class="img-fluid" width="100%">
-                        @endif
+                <div class="col-sm-12">
+                    <div class="about-img-box">
+                        {{--                        <img src="public/frontend/img/about-us-slider.png" alt="" class="img-fluid" width="80%">--}}
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-12 mt-5">
+                <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-12" style="line-height: 1.8rem">
-                            {!! $job->american_job_content !!}
+                        <div class="col-md-12 col-lg-12" style="line-height: 2rem">
+                            {!! $dancy->dancy_content !!}
                         </div>
 
                     </div>
