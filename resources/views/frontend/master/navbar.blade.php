@@ -25,6 +25,9 @@
                 <li class="nav-item">
                     <a class="nav-link @if(Request::is('our-story')) active @endif" href="{{ route('story.page') }}">Our Story</a>
                 </li>
+{{--                <li class="nav-item">--}}
+{{--                    <a class="nav-link" href="#">Conversion Guide</a>--}}
+{{--                </li>--}}
                 <li class="nav-item">
                     <a class="nav-link @if(Request::is('american-dream')) active @endif" href="{{ route('dream.page') }}">American Dream</a>
                 </li>

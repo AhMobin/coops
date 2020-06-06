@@ -1,5 +1,5 @@
 @extends('frontend.master.layout')
-@section('title','jobs')
+@section('title','Jobs Build America')
 
 @section('content')
 

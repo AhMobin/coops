@@ -12,6 +12,7 @@ use App\Model\Service;
 use App\Model\Story;
 use App\Model\Goal;
 use App\Model\Dancy;
+use App\Model\VisitorComment;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -64,5 +65,29 @@ class FrontendController extends Controller
     public function dancy(){
         $dancy = Dancy::where('status',1)->first();
         return view('frontend.pages.dancy',compact('dancy'));
+    }
+
+
+    public function ContactForm(Request $request){
+
+        $request->validate([
+           'name' => 'required',
+           'email' => 'required',
+           'message' => 'required',
+        ]);
+
+        VisitorComment::create([
+           'name' => $request->name,
+           'email' => $request->email,
+           'subject' => $request->subject,
+           'message' => $request->message,
+        ]);
+
+        $notification = array(
+            'messege' => 'Thanks For Your Message.',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->back()->with($notification);
     }
 }

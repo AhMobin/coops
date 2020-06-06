@@ -1,7 +1,9 @@
 @extends('frontend.master.layout')
-@section('title','contact')
+@section('title','Contact')
 
 @section('content')
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
 
   <!--/ Intro Single star /-->
   <section class="intro-single">
@@ -35,9 +37,8 @@
         <div class="col-sm-12">
           <div class="row">
             <div class="col-md-7">
-              <form class="form-a contactForm" action="" method="post" role="form">
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
+              <form action="{{ route('visitors.comment') }}" method="post">
+                  @csrf
                 <div class="row">
                   <div class="col-md-6 mb-3">
                     <div class="form-group">
@@ -47,13 +48,13 @@
                   </div>
                   <div class="col-md-6 mb-3">
                     <div class="form-group">
-                      <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                      <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>
                       <div class="validation"></div>
                     </div>
                   </div>
                   <div class="col-md-12 mb-3">
                     <div class="form-group">
-                      <input type="url" name="subject" class="form-control form-control-lg form-control-a" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                      <input type="text" name="subject" class="form-control form-control-lg form-control-a" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
                       <div class="validation"></div>
                     </div>
                   </div>
@@ -156,5 +157,53 @@
   </section>
   <!--/ Contact End /-->
 
+
+    <!-- jQuery -->
+    <script src="{{ asset('public/backend/vendors/jquery/dist/jquery.min.js') }}"></script>
+
+  <!-- For toastr sweet alert message -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script>
+          @if(Session::has('messege'))
+      var type="{{Session::get('alert-type','info')}}"
+      switch(type){
+          case 'info':
+              toastr.info("{{ Session::get('messege') }}");
+              break;
+          case 'success':
+              toastr.success("{{ Session::get('messege') }}");
+              break;
+          case 'warning':
+              toastr.warning("{{ Session::get('messege') }}");
+              break;
+          case 'error':
+              toastr.error("{{ Session::get('messege') }}");
+              break;
+      }
+      @endif
+  </script>
+
+  <script>
+      $(document).on("click", "#delete", function(e){
+          e.preventDefault();
+          var link = $(this).attr("href");
+          swal({
+              title: "Are you Want to delete?",
+              text: "Once Delete, This will be Permanently Delete!",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+          })
+              .then((willDelete) => {
+                  if (willDelete) {
+                      window.location.href = link;
+                  } else {
+                      swal("Safe Data!");
+                  }
+              });
+      });
+  </script>
 
 @endsection
