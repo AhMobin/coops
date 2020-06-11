@@ -68,6 +68,11 @@ class FrontendController extends Controller
     }
 
 
+    public function guide(){
+        return view('frontend.pages.cch_guide');
+    }
+
+
     public function ContactForm(Request $request){
 
         $request->validate([

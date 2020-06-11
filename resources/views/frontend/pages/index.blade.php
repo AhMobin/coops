@@ -24,7 +24,7 @@
               <div class="col-md-12">
                   <div class="title-wrap d-flex justify-content-between">
                       <div class="title-box">
-                          <h2 class="title-a" style="margin-bottom: -20px">{{ $dancy->page_heading }}</h2>
+                          <h2 class="title-a" style="margin-bottom: -20px; ">{{ $dancy->page_heading }}</h2>
                       </div>
                   </div>
                   <div class="row">
@@ -138,29 +138,59 @@
 
 
   <section class="section-services mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="title-wrap d-flex justify-content-between">
-            <div class="title-box">
-              <h2 class="title-a" style="margin-bottom: -20px">{{ $dream->homepage_title }}</h2>
-            </div>
-          </div>
+      <div class="container">
           <div class="row">
-            <div class="col-md-12">
-              <div class="text-justify">
-                <p style="margin-top:-20px; margin-bottom:-20px;">
-                    {!! substr($dream->dream_content,0,500).' ' !!}
+              <div class="col-md-12">
+                  <div class="title-wrap d-flex justify-content-between">
+                      <div class="title-box">
+                          <h2 class="title-a" style="margin-bottom: -20px">{{ $dream->homepage_title }}</h2>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="text-justify">
+                              <p style="margin-top:-20px; margin-bottom:-20px;">
+                                  {!! substr($dream->dream_content,0,500).' ' !!}
 
-                    <a href="{{ route('dream.page') }}"><b>Learn More...</b></a> </p>
+                                  <a href="{{ route('dream.page') }}"><b>Learn More...</b></a> </p>
 
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-          </div>
-        </div>
       </div>
-</section>
+  </section>
+
+
+
+  <section class="section-services mt-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="title-wrap d-flex justify-content-between">
+                      <div class="title-box">
+                          <h2 class="title-a" style="margin-bottom: -40px">CCH Conversion Guide</h2>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="text-justify">
+                              <p style=";">
+                                  So, you want to convert an existing multi-family housing facility to co-operative ownership.  This is what we need to help you:</p>
+                              <p>This Conversion Guide is based on the normal HUD 213 Market Rate housing program; but, is also consistent with the requirements of most Banks and/or other Financing Facilities.
+                              <ol>
+                                  <li>Description of the apartments, at a minimum, by bedroom size, how many of  each size, present rent, description of equipment included in each (range, refrigerator, dishwasher, disposal, air conditioner, cable connection, etc.)</li>
+                              </ol>
+                              <a href="{{ route('cch.guide') }}"><b>Learn More...</b></a></p>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
 
 @endsection

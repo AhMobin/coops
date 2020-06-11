@@ -28,6 +28,7 @@ Route::get('/our-goals','Front\FrontendController@goals')->name('goals.page');
 Route::get('/jobs-build-america','Front\FrontendController@jobs')->name('jobs.page');
 Route::get('/contact-us','Front\FrontendController@contact')->name('contact.page');
 Route::get('/jim-dancy','Front\FrontendController@dancy')->name('jim.dancy');
+Route::get('cch/conversion/guide','Front\FrontendController@guide')->name('cch.guide');
 
 //contact us form
 Route::post('visitors/comment','Front\FrontendController@ContactForm')->name('visitors.comment');
@@ -95,3 +96,4 @@ Route::get('job/inactive/{id}','Back\AmericaJobController@inactive');
 Route::resource('dancy','Back\DancyController');
 Route::get('dancy/active/{id}','Back\DancyController@active');
 Route::get('dancy/inactive/{id}','Back\DancyController@inactive');
+

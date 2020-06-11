@@ -3,6 +3,12 @@
 
 @section('content')
 
+    <style>
+        .bot{
+            margin: 30px 10px;
+        }
+    </style>
+
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
 
   <!--/ Intro Single star /-->
@@ -156,6 +162,83 @@
     </div>
   </section>
   <!--/ Contact End /-->
+
+
+    <section class="intro-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="title-single-box">
+                        <h1 class="title-single">Our Board Of Trustees</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--/ Intro Single End /-->
+
+    <!--/ About Star /-->
+    <section class="section-about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="bot">
+                        <h5>James N. Dancy, Sr., President</h5>
+                        <h6>Barbara L. Dancy, Secretary</h6>
+                        <p>7123 Avalon Gates, Trumbull CT 06611</p>
+                        <p>1087 Broad Street, Suite 203 Bridgeport, CT 06604</p>
+                        <p><b>Phone:</b> (203) 284-1594<br>
+                            <b>Mail:</b> Jamesdancy@snet.net<br>
+                            <b>Fax:</b> (203) 384-1881</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="bot">
+                        <h5>Dr. Moinuddin Sarker, Sr. Vice President</h5>
+                        <p>Inventor of technology and products entitles: “Method for converting waste plastics to lower-molecular weight hydrocarbons and more.</p>
+                        <p>1087 Broad street, Bridgeport, CT 06604</p>
+                        <p><b>Phone:</b> (203) 384-1594<br>
+                            <b>Mail:</b> stewartchief@comcast.net<br>
+                            <b>Fax:</b> (203) 384-1881</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="bot">
+                        <h5>Rolando Ted Stewart, Vice President</h5>
+                        <p>1087 Broad Street,   Bridgeport, CT 06604</p>
+                        <p><b>Phone:</b> (203) 384-1594<br>
+                            <b>Mail:</b> stewartchief@comcast.net<br>
+                            <b>Fax:</b> (203) 384-1881</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="bot">
+                        <h5>Alfred Reynolds, Principal</h5>
+                        <h6>Alton Management Corp</h6>
+                        <p>2934 Telegraph Avenue, Oakland, CA 94609 </p>
+                        <p><b>Phone:</b> 510-663-0177<br>
+                            <b>Website:</b> www.altoncorp.com<br>
+                            <b>Fax:</b> 510-663-0176</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="bot">
+                        <h5>William H. Smoot, VP</h5>
+                        <h6>Reginal Director, Ohio</h6>
+                        <p>16161 Northvale, East Cleveland, OH 44112</p>
+                        <p><b>Phone:</b> (216) 861-2008, (216) 987-8427<br>
+                            <b>Mail:</b> wbsmoot@sbcglobal.net</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- jQuery -->
