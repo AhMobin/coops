@@ -22,22 +22,15 @@
         <section class="section-about">
             <div class="container">
                 <div class="row">
-{{--                    <div class="col-md-12 col-lg-12">--}}
-{{--                        <div class="about-img-box ml-0 pl-0">--}}
-{{--                            <img src="{{ asset('storage/app/'.$about->cover_image) }}" alt="" class="img-fluid" width="100%">--}}
-{{--                        </div>--}}
-{{--                        <div class="sinse-box">--}}
-{{--                          <h3 class="sinse-title">EstateAgency--}}
-{{--                            <span></span>--}}
-{{--                            <img src="img/jim.png" alt="" class="img-fluid" width="100%">--}}
-{{--                            <br> Sinse 2017</h3>--}}
-{{--                          <p>Art & Creative</p>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-                    <div class="col-md-12">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="about-img-box ml-0 pl-0">
+                            <img src="{{ asset('storage/app/about/covers/j0MOuXcQ28eXeLLiTHdD4U9opghqNMGIKX04cM9y.png') }}" alt="" class="img-fluid" width="100%">
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-5">
                         <div class="row">
                             <div class="col-md-12 col-lg-12" style="line-height: 1.8rem">
-                                <p>you want to convert an existing multi-family housing facility to co-operative ownership.  This is what we need to help you:</p>
+                                <p>You want to convert an existing multi-family housing facility to co-operative ownership.  This is what we need to help you:</p>
                                 <p><b><u>This Conversion Guide is based on the normal HUD 213 Market Rate housing program; but, is also consistent with the requirements of most Banks and/or other Financing Facilities</u></b></p>
 
                                 <ol>

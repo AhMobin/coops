@@ -72,6 +72,10 @@ class FrontendController extends Controller
         return view('frontend.pages.cch_guide');
     }
 
+    public function BoDirectors(){
+        return view('frontend.pages.board_directors');
+    }
+
 
     public function ContactForm(Request $request){
 

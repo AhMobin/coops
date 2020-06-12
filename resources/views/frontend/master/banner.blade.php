@@ -12,7 +12,7 @@
                         <div class="col-lg-8">
                             <div class="intro-body">
                                 <h2 class="intro-title mb-4">
-                                    {{ $banner->banner_heading }}
+                                    <span class="color-b">Center for </span>Cooperative Housing
                                 </h2>
                             </div>
                         </div>

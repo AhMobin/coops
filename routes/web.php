@@ -29,6 +29,7 @@ Route::get('/jobs-build-america','Front\FrontendController@jobs')->name('jobs.pa
 Route::get('/contact-us','Front\FrontendController@contact')->name('contact.page');
 Route::get('/jim-dancy','Front\FrontendController@dancy')->name('jim.dancy');
 Route::get('cch/conversion/guide','Front\FrontendController@guide')->name('cch.guide');
+Route::get('our/board/of/directors','Front\FrontendController@BoDirectors')->name('board.directors');
 
 //contact us form
 Route::post('visitors/comment','Front\FrontendController@ContactForm')->name('visitors.comment');

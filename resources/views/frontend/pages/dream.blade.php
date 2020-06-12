@@ -22,19 +22,12 @@
   <section class="section-about">
     <div class="container">
       <div class="row">
-        <!-- <div class="col-sm-12"> -->
-          <!-- <div class="about-img-box"> -->
-            <!-- <img src="img/about-us-slider.png" alt="" class="img-fluid" width="80%"> -->
-          <!-- </div> -->
-          <!-- <div class="sinse-box">
-            <h3 class="sinse-title">EstateAgency
-              <span></span>
-              <img src="img/jim.png" alt="" class="img-fluid" width="100%">
-              <br> Sinse 2017</h3>
-            <p>Art & Creative</p>
-          </div> -->
-        </div>
-        <div class="col-md-12">
+          <div class="col-md-12 col-lg-12">
+              <div class="about-img-box ml-0 pl-0">
+                  <img src="{{ asset('storage/app/about/covers/j0MOuXcQ28eXeLLiTHdD4U9opghqNMGIKX04cM9y.png') }}" alt="" class="img-fluid" width="100%">
+              </div>
+          </div>
+        <div class="col-md-12 mt-5">
           <div class="row">
               <div class="col-md-12 col-lg-12" style="line-height: 2rem">
                 {!! $dream->dream_content !!}

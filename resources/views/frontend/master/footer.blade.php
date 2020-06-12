@@ -4,12 +4,21 @@
 <!--/ footer /-->
 <section class="section-footer" style="background-color: #2eca6a!important;">
     <div class="container">
+        <div class="row mb-4">
+
+            <div class="col-md-offset-3 col-md-9 col-lg-9">
+                <div class="w-header-a">
+{{--                    <a href="{{ route('index.page') }}">CC<span class="color-b">OPH</span></a>--}}
+                    <h3 class="w-title-a text-white">Center For Co-op Housing</h3>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-12 col-md-4">
                 <div class="widget-a">
-                    <div class="w-header-a">
-                        <h3 class="w-title-a text-white">Center For Co-op Housing</h3>
-                    </div>
+{{--                    <div class="w-header-a">--}}
+{{--                        <h3 class="w-title-a text-white">Center For Co-op Housing</h3>--}}
+{{--                    </div>--}}
                     <div class="w-body-a">
                         <p class="w-text-a color-text-a text-white">
                             James N. Dancy, President and CEO of the 501(c)(3) non-profit Center for Cooperative Housing (CCH) is a nationally recognized Developer and Manager of cooperative housing communities serving families of modest income.
@@ -23,7 +32,8 @@
                     <div class="w-header-a">
                         <!-- <h5 class="w-title-a">Important Links</h5> -->
                     </div>
-                    <div class="w-body-a" style="margin-top: 80px">
+{{--                    <div class="w-body-a" style="margin-top: 80px">--}}
+                    <div class="w-body-a">
                         <div class="w-footer-a">
                             <ul class="list-unstyled">
                                 <li class="color-a text-white">
@@ -41,48 +51,19 @@
             </div>
 
             <div class="col-sm-12 col-md-4 section-md-t3">
-                <nav class="nav-footer" style="margin-top: 80px">
+                <nav class="nav-footer">
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <a href="#" class="text-white">Legal</a>
+                            <a href="{{ route('jim.dancy') }}" class="text-white">Jim Dancy</a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#" class="text-white">Terms & Conditions</a>
+                            <a href="{{ route('cch.guide') }}" class="text-white">Conversion Guide</a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#" class="text-white">Privacy Policy</a>
+                            <a href="{{ route('board.directors') }}" class="text-white">Board Of Directors</a>
                         </li>
                     </ul>
                 </nav>
-{{--                <div class="socials-a text-center">--}}
-{{--                    <ul class="list-inline">--}}
-{{--                        <li class="list-inline-item">--}}
-{{--                            <a href="#">--}}
-{{--                                <i class="fa fa-facebook text-white" aria-hidden="true"></i>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li class="list-inline-item">--}}
-{{--                            <a href="#">--}}
-{{--                                <i class="fa fa-twitter text-white" aria-hidden="true"></i>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li class="list-inline-item">--}}
-{{--                            <a href="#">--}}
-{{--                                <i class="fa fa-instagram text-white" aria-hidden="true"></i>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li class="list-inline-item">--}}
-{{--                            <a href="#">--}}
-{{--                                <i class="fa fa-pinterest-p text-white" aria-hidden="true"></i>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li class="list-inline-item">--}}
-{{--                            <a href="#">--}}
-{{--                                <i class="fa fa-dribbble text-white" aria-hidden="true"></i>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                    </ul>--}}
-{{--                </div>--}}
             </div>
 
         </div>
@@ -96,11 +77,11 @@
                 <div class="copyright-footer">
                     <p class="copyright color-text-a text-white">
                         &copy; Copyright
-                        <span class="color-a text-white">CCOPH</span> All Rights Reserved.
+                        <span class="color-a text-white">CCOPH.</span> All Rights Reserved.
                     </p>
                 </div>
                 <div class="credits text-white">
-                    Developed by <a href="#" class="text-white">NKWT</a>
+                    Developed by <a href="https://shebawebtech.com" target="_blank" class="text-white"><b>SheBa Web Tech</b></a>
                 </div>
             </div>
         </div>

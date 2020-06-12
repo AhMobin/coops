@@ -18,17 +18,17 @@
 
 
   <!-- about Dancy start -->
-  <section class="section-services mt-5">
+  <section class="section-services mt-5 mb-0 pb-0">
       <div class="container">
           <div class="row">
               <div class="col-md-12">
                   <div class="title-wrap d-flex justify-content-between">
                       <div class="title-box">
-                          <h2 class="title-a" style="margin-bottom: -20px; ">{{ $dancy->page_heading }}</h2>
+                          <h2 class="title-a" style="margin-bottom: -40px; margin-top: -20px">JIM DANCY</h2>
                       </div>
                   </div>
                   <div class="row">
-                      <div class="col-md-8">
+                      <div class="col-md-8" style="margin-top: -22px">
                           <div class="text-justify">
                               <p>{!! substr($dancy->dancy_content,0,520) !!} <a href="{{ route('jim.dancy') }}"><b>Learn More...</b></a> </p>
                           </div>
@@ -36,7 +36,7 @@
 
                       @if($dancy->cover_image)
                           <div class="col-md-4">
-                              <img src="{{ asset('storage/app/'.$dancy->cover_image) }}" alt="" style="width: 100%; ">
+                              <img src="{{ asset('storage/app/'.$dancy->cover_image) }}" alt="" style="width: 100%; height: 75%">
                           </div>
                       @endif
                   </div>
@@ -54,13 +54,13 @@
               <div class="col-md-12">
                   <div class="title-wrap d-flex justify-content-between">
                       <div class="title-box">
-                          <h2 class="title-a" style="margin-bottom: -20px">What We Will Do</h2>
+                          <h2 class="title-a" style="margin-top: -90px">What We Will Do</h2>
                       </div>
                   </div>
               </div>
           </div>
 
-          <div class="row">
+          <div class="row" style="margin-top: -80px">
               @foreach($services as $ser)
               <div class="col-md-6">
                   <div class="card text-dark mb-3" style="border: none!important">
@@ -84,10 +84,10 @@
         <div class="col-md-12">
           <div class="title-wrap d-flex justify-content-between">
             <div class="title-box">
-              <h2 class="title-a" style="margin-bottom: -20px">{{ $story->homepage_title }}</h2>
+              <h2 class="title-a" style="margin-bottom: -50px; margin-top: -85px">{{ $story->homepage_title }}</h2>
             </div>
           </div>
-          <div class="row">
+          <div class="row" style="margin-top: -90px">
             <div class="col-md-8">
               <div class="text-justify">
                   <p>{!! substr($story->story_content,0,720) !!} <a href="{{ route('story.page') }}"><b>Learn More...</b></a> </p>
@@ -113,13 +113,13 @@
         <div class="col-md-12">
           <div class="title-wrap d-flex justify-content-between">
             <div class="title-box">
-              <h2 class="title-a" style="margin-bottom: -20px">Benefits</h2>
+              <h2 class="title-a" style="margin-bottom: -20px; margin-top: -20px">Benefits</h2>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" style="margin-top: -15px">
 
           @foreach($benefits as $ben)
           <div class="col-md-4">
@@ -143,10 +143,12 @@
               <div class="col-md-12">
                   <div class="title-wrap d-flex justify-content-between">
                       <div class="title-box">
-                          <h2 class="title-a" style="margin-bottom: -20px">{{ $dream->homepage_title }}</h2>
+                          <h2 class="title-a" style="margin-bottom: -20px; margin-top: -50px">
+                              {{ $dream->homepage_title }}
+                          </h2>
                       </div>
                   </div>
-                  <div class="row">
+                  <div class="row" style="margin-top: -20px">
                       <div class="col-md-12">
                           <div class="text-justify">
                               <p style="margin-top:-20px; margin-bottom:-20px;">

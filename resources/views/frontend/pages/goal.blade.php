@@ -21,13 +21,12 @@
   <section class="section-about">
     <div class="container">
       <div class="row">
-        <!-- <div class="col-sm-12">
-          <div class="about-img-box">
-
+          <div class="col-sm-12">
+              <div class="about-img-box ml-0 pl-0">
+                  <img src="{{ asset('storage/app/goal/covers/M84O9mzZ1eWzXEsBNcIBjji8z4nbMQLWCu0qpOS9.jpeg') }}" alt="" class="img-fluid" width="100%" style="height: 500px">
+              </div>
           </div>
-
-        </div> -->
-        <div class="col-md-12">
+        <div class="col-md-12 mt-5">
           <div class="row">
               <div class="col-md-12 col-lg-12" style="line-height: 2.3rem">
                   {!! $goal->goal_content !!}

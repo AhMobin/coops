@@ -25,18 +25,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="about-img-box">
-{{--                        <img src="public/frontend/img/about-us-slider.png" alt="" class="img-fluid" width="80%">--}}
+                    <div class="about-img-box ml-0 pl-0">
+                        <img src="{{ asset('storage/app/story/covers/story.jpg') }}" alt="" class="img-fluid" width="100%" style="height: 500px">
                     </div>
-                    <!-- <div class="sinse-box">
-                      <h3 class="sinse-title">EstateAgency
-                        <span></span>
-                        <img src="img/jim.png" alt="" class="img-fluid" width="100%">
-                        <br> Sinse 2017</h3>
-                      <p>Art & Creative</p>
-                    </div> -->
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 mt-5">
                     <div class="row">
                         <div class="col-md-12 col-lg-12" style="line-height: 2rem">
                             {!! $story->story_content !!}
