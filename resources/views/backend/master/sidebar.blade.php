@@ -1,7 +1,9 @@
 <div class="col-md-3 left_col">
     <div class="left_col scroll-view">
         <div class="navbar nav_title" style="border: 0;">
-            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+            <a href="{{ route('home') }}" class="site_title">
+                <img src="{{ url('storage/app/logos/logo.png') }}" alt="" style="width: 150px; height: 40px;">
+            </a>
         </div>
 
         <div class="clearfix"></div>
@@ -13,7 +15,7 @@
             </div>
             <div class="profile_info">
                 <span>Welcome,</span>
-                <h2>John Doe</h2>
+                <h2>Admin</h2>
             </div>
         </div>
         <!-- /menu profile quick info -->

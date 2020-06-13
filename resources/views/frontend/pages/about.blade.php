@@ -10,7 +10,7 @@
       <div class="row">
         <div class="col-md-12 col-lg-12">
           <div class="title-single-box">
-            <h1 class="title-single">{{ $about->page_heading }}</h1>
+            <h1 class="title-single" style="text-transform: uppercase">{{ $about->page_heading }}</h1>
           </div>
         </div>
 

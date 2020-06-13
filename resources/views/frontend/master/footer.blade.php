@@ -6,19 +6,15 @@
     <div class="container">
         <div class="row mb-4">
 
-            <div class="col-md-offset-3 col-md-9 col-lg-9">
+            <div class="col-md-6 col-lg-6">
                 <div class="w-header-a">
-{{--                    <a href="{{ route('index.page') }}">CC<span class="color-b">OPH</span></a>--}}
-                    <h3 class="w-title-a text-white">Center For Co-op Housing</h3>
+                    <a href="{{ route('index.page') }}"><img src="{{ url('storage/app/logos/logo-font.png') }}" alt="" style=" width: 200px; float: left"></a>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-4">
                 <div class="widget-a">
-{{--                    <div class="w-header-a">--}}
-{{--                        <h3 class="w-title-a text-white">Center For Co-op Housing</h3>--}}
-{{--                    </div>--}}
                     <div class="w-body-a">
                         <p class="w-text-a color-text-a text-white">
                             James N. Dancy, President and CEO of the 501(c)(3) non-profit Center for Cooperative Housing (CCH) is a nationally recognized Developer and Manager of cooperative housing communities serving families of modest income.
@@ -29,10 +25,6 @@
             </div>
             <div class="col-sm-12 col-md-4 section-md-t3">
                 <div class="widget-a">
-                    <div class="w-header-a">
-                        <!-- <h5 class="w-title-a">Important Links</h5> -->
-                    </div>
-{{--                    <div class="w-body-a" style="margin-top: 80px">--}}
                     <div class="w-body-a">
                         <div class="w-footer-a">
                             <ul class="list-unstyled">

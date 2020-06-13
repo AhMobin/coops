@@ -9,13 +9,15 @@
             <span></span>
             <span></span>
         </button>
-        <a class="navbar-brand text-brand" href="{{ route('index.page') }}">CC<span class="color-b">OPH</span></a>
+        <a class="navbar-brand" href="{{ route('index.page') }}">
+            <img src="{{ url('storage/app/logos/logo.png') }}" alt="" style=" width: 200px">
+        </a>
         <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
                 data-target="#navbarTogglerDemo01" aria-expanded="false">
 {{--            <span class="fa fa-search" aria-hidden="true"></span>--}}
         </button>
         <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav" style="margin-top: 15px">
                 <li class="nav-item">
                     <a class="nav-link @if(Request::is('/')) active @endif" href="{{ route('index.page') }}">Home</a>
                 </li>

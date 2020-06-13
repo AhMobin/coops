@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-12 col-lg-12">
                     <div class="title-single-box">
-                        <h1 class="title-single">{{ $dancy->page_heading }}</h1>
+                        <h1 class="title-single" style="text-transform: uppercase">{{ $dancy->page_heading }}</h1>
                     </div>
                 </div>
 
@@ -31,7 +31,6 @@
                 <div class="col-md-12 mt-5">
                     <div class="row">
                         <div class="col-md-12 col-lg-12" style="line-height: 2rem">
-{{--                            {!! $dancy->dancy_content !!}--}}
                             <p>Jim Dancy’s hands-on supervision of related corporate housing stock has annually exceeded 3500 units including: cooperative, elderly and other affordable rental housing. He has negotiated restructuring of HUD, Secretary held Mortgages; arranged and conducted Membership Workshops; and, supervised the management of numerous distressed multi-family affordable housing facilities for more than forty (40) years without recording one (1) late mortgage payment.</p>
                             <p>HUD Mortgages and all other corporate financial obligations have been satisfied. In most cases, the physical property was restored and/or maintained in good condition with many generating cash reserves.</p>
                             <div class="row">
@@ -42,7 +41,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <img src="{{ asset('storage/app/dancy/covers/dancy-richard.jpg') }}" alt="" width="100%" class="img-fluid">
-                                    <p><b>Jim Dancy expresses appreciation to Senator Richard Blumenthal here for his concern for and assistance with addressing affordable housing issues affecting families of modest income in the State of Connecticut.</b></p>
+                                    <small><b>Jim Dancy expresses appreciation to Senator Richard Blumenthal here for his concern for and assistance with addressing affordable housing issues affecting families of modest income in the State of Connecticut.</b></small>
                                 </div>
                             </div>
 

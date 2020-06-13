@@ -17,7 +17,7 @@
       <div class="row">
         <div class="col-md-12 col-lg-8">
           <div class="title-single-box">
-            <h1 class="title-single">Contact US</h1>
+            <h1 class="title-single" style="text-transform: uppercase">Contact US</h1>
           </div>
         </div>
 
@@ -117,8 +117,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-12">
-                    <div class="title-single-box">
-                        <h1 class="title-single">Our Board Of Trustees</h1>
+                    <div class="">
+                        <h1 class="title-single" style="text-transform: uppercase">Our Board Of Trustees</h1>
                     </div>
                 </div>
 
@@ -149,9 +149,8 @@
                         <h5>Dr. Moinuddin Sarker, Sr. Vice President</h5>
                         <p>Inventor of technology and products entitles: “Method for converting waste plastics to lower-molecular weight hydrocarbons and more.</p>
                         <p>1087 Broad street, Bridgeport, CT 06604</p>
-                        <p><b>Phone:</b> (203) 384-1594<br>
-                            <b>Mail:</b> stewartchief@comcast.net<br>
-                            <b>Fax:</b> (203) 384-1881</p>
+                        <p><b>Phone:</b> (203) 956-7501<br>
+                            <b>Mail:</b> msarker@wastetechnologiesllc.com</p>
                     </div>
                 </div>
 
