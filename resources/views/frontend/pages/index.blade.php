@@ -24,7 +24,7 @@
                 <div class="col-md-12">
                     <div class="title-wrap d-flex justify-content-between">
                         <div class="title-box">
-                            <h2 class="title-a" style="margin-bottom: -40px; margin-top: -20px">JIM DANCY</h2>
+                            <h2 class="title-a" style="margin-bottom: -40px; margin-top: -20px">JAMES DANCY</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -54,13 +54,13 @@
                 <div class="col-md-12">
                     <div class="title-wrap d-flex justify-content-between">
                         <div class="title-box">
-                            <h2 class="title-a" style="margin-top: -90px">What We Will Do</h2>
+                            <h2 class="title-a wwwd" style="margin-top: -90px">What We Will Do</h2>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row" style="margin-top: -80px">
+            <div class="row wwwdc" style="margin-top: -80px">
                 @foreach($services as $ser)
                     <div class="col-md-6">
                         <div class="card text-dark mb-3" style="border: none!important">

@@ -3,21 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="47cc6033-6abf-4064-b9ad-2a8c457ce893" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/master/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/master/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/master/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/master/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/master/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/master/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/master/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/master/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/master/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/master/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/board_directors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/board_directors.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/cch_guide.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/cch_guide.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/dancy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/dancy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/dream.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/dream.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/goal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/goal.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/jobs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/jobs.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/pages/story.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/pages/story.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +178,8 @@
       <workItem from="1591966394280" duration="8538000" />
       <workItem from="1592054624174" duration="5291000" />
       <workItem from="1592071290827" duration="1381000" />
+      <workItem from="1592313259890" duration="2568000" />
+      <workItem from="1592319672497" duration="4498000" />
     </task>
     <servers />
   </component>

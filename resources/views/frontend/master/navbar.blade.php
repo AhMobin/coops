@@ -10,11 +10,10 @@
             <span></span>
         </button>
         <a class="navbar-brand" href="{{ route('index.page') }}">
-            <img src="{{ url('storage/app/logos/logo.png') }}" alt="" style=" width: 200px">
+            <img class="brand_logo" src="{{ url('storage/app/logos/logo.png') }}" alt="" width="180px">
         </a>
         <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
                 data-target="#navbarTogglerDemo01" aria-expanded="false">
-{{--            <span class="fa fa-search" aria-hidden="true"></span>--}}
         </button>
         <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
             <ul class="navbar-nav" style="margin-top: 15px">

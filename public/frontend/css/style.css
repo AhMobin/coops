@@ -747,6 +747,41 @@ a:hover {
   opacity: 0.9;
 }
 
+
+/*============================
+    Navbar Responsive
+**************** */
+
+@media only screen and (max-width: 1200px) {
+    .nav-item {
+        margin-left: 10px!important;
+    }
+    .nav-link{
+        font-size: 14px!important;;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav-item {
+        margin-left: 8px!important;
+    }
+    .nav-link{
+        font-size: 12px!important;;
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    .brand_logo{
+        width: 150px!important;
+    }
+    .nav-item {
+        margin-left: 8px!important;
+    }
+    .nav-link{
+        font-size: 12px!important;;
+    }
+}
+
 /*======================================
 //--//-->   BOX COLAPSE
 ======================================*/
@@ -1545,6 +1580,15 @@ footer .credits {
   font-size: 14px;
 }
 
+
+.footer_nav{
+    color: white;
+}
+
+.footer_nav:hover{
+    color:black;
+}
+
 /*======================================
 //--//-->   FORM INPUT
 ======================================*/
@@ -2022,4 +2066,17 @@ footer .credits {
   .box-collapse .title-box-d .title-d {
     font-size: 1.3rem;
   }
+}
+
+
+/*Custom Responsive */
+
+@media only screen and (max-width: 1199px) {
+    .wwwd{
+        margin-top: -60px!important;
+    }
+
+    .wwwdc{
+        margin-top: -50px!important;
+    }
 }

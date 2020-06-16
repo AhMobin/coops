@@ -28,9 +28,11 @@
                     <div class="w-body-a">
                         <div class="w-footer-a">
                             <ul class="list-unstyled">
-                                <li class="color-a text-white">
-                                    <span class="color-text-a text-white" style="font-weight: bold">Office .</span> Legal Center at 1087
+                                <li class="color-a text-white" style="line-height: 20px; margin-bottom: 5px">
+                                    <span class="color-text-a text-white" style="font-weight: bold;">Office .</span> Legal Center at 1087
                                     Broad Street, Bridgeport, CT 0660</li>
+                                <li class="color-a text-white">
+                                    <span class="color-text-a text-white" style="font-weight: bold">Email .</span> jamesdancy@snet.net</li>
                                 <li class="color-a text-white">
                                     <span class="color-text-a text-white" style="font-weight: bold">Phone .</span> (203) 384-1594</li>
                                 <li class="color-a text-white">
@@ -46,13 +48,13 @@
                 <nav class="nav-footer">
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <a href="{{ route('jim.dancy') }}" class="text-white">Jim Dancy</a>
+                            <a href="{{ route('jim.dancy') }}" class="footer_nav">James Dancy</a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="{{ route('cch.guide') }}" class="text-white">Conversion Guide</a>
+                            <a href="{{ route('cch.guide') }}" class="footer_nav">Conversion Guide</a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="{{ route('board.directors') }}" class="text-white">Board Of Directors</a>
+                            <a href="{{ route('board.directors') }}" class="footer_nav">Board Of Directors</a>
                         </li>
                     </ul>
                 </nav>

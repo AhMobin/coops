@@ -27,7 +27,7 @@ Route::get('/american-dream','Front\FrontendController@dream')->name('dream.page
 Route::get('/our-goals','Front\FrontendController@goals')->name('goals.page');
 Route::get('/jobs-build-america','Front\FrontendController@jobs')->name('jobs.page');
 Route::get('/contact-us','Front\FrontendController@contact')->name('contact.page');
-Route::get('/jim-dancy','Front\FrontendController@dancy')->name('jim.dancy');
+Route::get('/james-dancy','Front\FrontendController@dancy')->name('jim.dancy');
 Route::get('cch/conversion/guide','Front\FrontendController@guide')->name('cch.guide');
 Route::get('our/board/of/directors','Front\FrontendController@BoDirectors')->name('board.directors');
 
